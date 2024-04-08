@@ -1,5 +1,5 @@
 import './App.css'
-import config from './config/config'
+import conf from './conf/conf'
 
 export default function App() {
   
