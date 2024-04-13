@@ -9,20 +9,25 @@ export default function App() {
   const dispatch = useDispatch() ;
   
   useEffect(()=>{
-    authService.getCurrentUser
+    authService.getCurrentUser()
     .then((userData)=>{
       if(userData){
-        login()
+        dispatch(login({userData}))
       }else{
-        logout()
+        dispatch(logout())
       }
     })
-    .finally()
+    .finally(()=>setLoading(false)) 
   },[])
-
-  return (
-    <h1 className="text-3xl font-bold">
-      Hello world!
-    </h1>
-  )
+  
+  return !loading ?(
+    <div className='min-h-screen flex flex-wrap content-between bg-gray-500 '>
+      <div className='w-full block'>
+        test
+        <main>
+          {/* <Outlet/> */}
+        </main>
+      </div>
+    </div>
+  ) : (null)
 }
