@@ -56,7 +56,7 @@ const Header = () => {
           
           {authStatus && (
             <li>
-              
+              <LogoutBtn/>
             </li>
           )}
 
