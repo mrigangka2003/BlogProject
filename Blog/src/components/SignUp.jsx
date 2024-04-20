@@ -1,7 +1,6 @@
 import { useState } from "react";
-
 import authService from "../appwrite/auth";
-import { Link, Navigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { login } from "../store/store";
 import { Button, Input } from "./index";
 import { useDispatch } from "react-redux";
@@ -9,7 +8,7 @@ import { useForm } from "react-hook-form";
 
 const SignUp = () => {
   const [error, setError] = useState("");
-  const navigate = Navigate();
+  const navigate = useNavigate();
   const dispatch = useDispatch();
   const { register, handleSubmit } = useForm();
 
