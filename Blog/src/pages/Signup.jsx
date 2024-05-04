@@ -1,8 +1,10 @@
-
+import {SignUp as SignupComponent} from '../components/index'
 
 const SignUp = () => {
   return (
-    <div>SignUp</div>
+    <div className='py-8'>
+        <SignupComponent/>
+    </div>
   )
 }
 
