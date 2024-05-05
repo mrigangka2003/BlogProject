@@ -3,7 +3,7 @@ import { Container,PostCard } from '../components'
 import appwriteService from '../appwrite/config'
 
 
-const AllPost = () => {
+const AddPost = () => {
     const[posts,setPosts] = useState([]) ;
 
     useEffect(()=>{
@@ -38,4 +38,4 @@ const AllPost = () => {
   )
 }
 
-export default AllPost
+export default AddPost
