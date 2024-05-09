@@ -25,7 +25,7 @@ function App() {
     <div className="min-h-[100dvh] flex flex-col justify-between bg-black text-white">
       <Header />
       <main>
-        {/* <Outlet /> */}
+        {/* <Outlet/> */}
       </main>
       <Footer />
     </div>
