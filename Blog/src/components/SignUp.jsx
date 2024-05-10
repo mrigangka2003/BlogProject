@@ -5,6 +5,7 @@ import { login } from "../store/authSlice";
 import { Button, Input } from "./index";
 import { useDispatch } from "react-redux";
 import { useForm } from "react-hook-form";
+import {Logo} from "./index";
 
 const SignUp = () => {
   const [error, setError] = useState("");
@@ -12,7 +13,7 @@ const SignUp = () => {
   const dispatch = useDispatch();
   const { register, handleSubmit } = useForm();
 
-  const create = async () => {
+  const create = async (data) => {
     setError("");
     try {
       const userData = await authService.createAccount(data);
@@ -35,7 +36,7 @@ const SignUp = () => {
       >
         <div className="mb-2 flex justify-center">
           <span className="inline-block w-full max-w-[100px]">
-            {/* <Logo width="100%" /> */}
+            <Logo width="100%" />
           </span>
         </div>
         <h2 className="text-center text-2xl font-bold leading-tight">
