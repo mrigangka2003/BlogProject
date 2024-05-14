@@ -29,7 +29,11 @@ function App() {
       </main>
       <Footer />
     </div>
-  ) : null
+  ) : (
+    <div className='text-white flex justify-center items-center text-2xl font-semibold' >
+      <h1>Loading !!!</h1>
+    </div>
+  )
 }
 
 export default App

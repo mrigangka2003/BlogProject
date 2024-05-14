@@ -60,6 +60,7 @@ function Footer() {
             </li>
           </ul>
         </div>
+        <div className="my-4 flex justify-center font-semibold text-sm"> Mrigangka Datta</div>
       </Container>
     </footer>
   );
