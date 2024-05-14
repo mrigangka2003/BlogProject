@@ -19,6 +19,7 @@ function Header() {
   const closeNavBar = () => {
     setnavOpen(false);
   };
+
   const navItems = [
     {
       name: 'Home',
@@ -61,7 +62,7 @@ function Header() {
               {navOpen ? (<img src={close} alt="close" />) : (<img src={menu} alt="menu" />)}
             </button>
           </div>
-          <ul className={` ml-auto  md:flex md:w-auto md:items-center md:flex-row   ${navOpen ? "w-full flex flex-col items-center" : "hidden"}`}>
+          <ul className={`ml-auto  md:flex md:w-auto md:items-center md:flex-row ${navOpen ? "w-full flex flex-col items-center" : "hidden"}`}>
             {navItems.map((item) =>
               item.active ? (
                 <li key={item.name}>
