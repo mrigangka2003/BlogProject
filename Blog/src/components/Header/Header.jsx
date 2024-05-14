@@ -69,7 +69,7 @@ function Header() {
                     onClick={() => {
                       navigate(item.slug);
                     }}
-                    className="inline-block font-bold text-white px-6 py-2 duration-200 hover:bg-header-hover-color hover:text-[#DCDF00] rounded-full text-xl"
+                    className="inline-block font-bold text-white px-6 py-2 duration-200 hover:bg-header-hover-color hover:text-teal rounded-full text-xl"
                   >
                     {item.name}
                   </button>

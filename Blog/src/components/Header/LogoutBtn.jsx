@@ -13,7 +13,7 @@ function LogoutBtn() {
   }
   return (
     <button
-      className="rounded-md  bg-[#DCDF00] hover:bg-[#DCDF00]/80 px-3 py-2 text-md font-semibold text-black"
+      className="rounded-md  bg-teal hover:bg-teal/80 px-3 py-2 text-md font-semibold text-black"
       onClick={logoutHandler}
     >Logout</button>
   )
