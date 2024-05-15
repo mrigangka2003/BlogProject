@@ -42,7 +42,7 @@ function Signup() {
                             Already have an account?&nbsp;
                             <Link
                                 to="/login"
-                                className="font-medium text-[#DCDF00] text-primary transition-all duration-200 hover:underline"
+                                className="font-medium text-[#008080] text-primary transition-all duration-200 hover:underline"
                             >
                                 Log In
                             </Link>
